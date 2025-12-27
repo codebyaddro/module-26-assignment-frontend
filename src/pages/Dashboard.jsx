@@ -79,7 +79,7 @@ export default function Dashboard() {
             <span>{event.title}</span>
             <button
                 onClick={() => deleteEvent(event._id)}
-                className="text-red-500"
+                className="text-red-500 cursor-pointer border border-red-500 hover:bg-red-500 hover:text-white px-2 py-1"
             >
                 Delete
             </button>
