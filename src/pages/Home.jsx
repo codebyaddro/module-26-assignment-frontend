@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import api from "../services/api";
 
 export default function Home() {
@@ -31,7 +31,7 @@ export default function Home() {
     return (
         <div className="lg:w-3/4 md:w-full mx-auto p-10 space-y-16">
 
-            {/* 🔵 Banner */}
+            {/* Banner */}
             <section>
                 <h1 className="text-4xl font-bold mb-4">
                     Discover Events Near You
@@ -41,7 +41,7 @@ export default function Home() {
                 </p>
             </section>
 
-            {/* 🟢 Categories */}
+            {/* Categories */}
             <section>
                 <h2 className="text-2xl font-semibold mb-4">
                     Browse by Category
@@ -60,7 +60,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* 🟣 Upcoming Events */}
+            {/* Upcoming Events */}
             <section>
                 <h2 className="text-2xl font-semibold mb-4">
                     Upcoming Events
@@ -85,12 +85,12 @@ export default function Home() {
                                     {event.location}
                                 </p>
 
-                                <button
-                                    onClick={() => navigate("/events")}
-                                    className="mt-3 text-sm text-blue-600 hover:underline"
+                                <Link
+                                    to={`/events/${event._id}`}
+                                    className="inline-block mt-3 text-[16px] text-gray-600 font-medium hover:underline hover:decoration-2"
                                 >
-                                    View Details →
-                                </button>
+                                    View Details <i class="fa-solid fa-arrow-right text-sm"></i>
+                                </Link>
                             </div>
                         ))}
                     </div>

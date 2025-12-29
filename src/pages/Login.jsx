@@ -62,7 +62,7 @@ export default function Login() {
             </form>
 
             <p className="text-sm mt-4 text-center">
-                Don’t have an account?{" "}
+                Don\'t have an account?{" "}
                 <span
                     onClick={() => navigate("/register")}
                     className="text-blue-600 cursor-pointer hover:underline"

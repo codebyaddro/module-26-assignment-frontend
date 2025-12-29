@@ -6,7 +6,7 @@ export default function Dashboard() {
     const [events, setEvents] = useState([]);
     const [title, setTitle] = useState("");
 
-    // 🔹 Update states
+    // Update states
     const [isEditing, setIsEditing] = useState(false);
     const [editEventId, setEditEventId] = useState(null);
     const [editTitle, setEditTitle] = useState("");
@@ -54,14 +54,14 @@ export default function Dashboard() {
         }
     };
 
-    // 🔹 Open edit modal
+    // Open edit modal
     const openEditModal = (event) => {
         setEditEventId(event._id);
         setEditTitle(event.title);
         setIsEditing(true);
     };
 
-    // 🔹 Update event
+    // Update event
     const updateEvent = async () => {
         if (!editTitle) {
             toast.error("Title required");
@@ -127,9 +127,9 @@ export default function Dashboard() {
                 </div>
             ))}
 
-            {/* 🔥 Edit Modal */}
+            {/* Edit Modal */}
             {isEditing && (
-                <div className="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center">
+                <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex justify-center items-center">
                     <div className="bg-white p-6 rounded w-80">
                         <h3 className="text-lg font-bold mb-4">
                             Update Event

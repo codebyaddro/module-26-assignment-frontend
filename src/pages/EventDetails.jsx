@@ -22,7 +22,7 @@ export default function EventDetails() {
             <p className="text-gray-600 mt-2">
                 {event.date} • {event.time}
             </p>
-{/* <p className="p-10">Loading...</p> */}
+            
             <p className="mt-4">{event.description}</p>
             <p className="mt-2 font-semibold">
                 Location: {event.location}

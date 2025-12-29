@@ -27,10 +27,10 @@ export default function Events() {
                     </p>
 
                     <Link
-                    to={`/events/${event._id}`}
-                    className="inline-block mt-3 text-blue-600"
+                        to={`/events/${event._id}`}
+                        className="inline-block mt-3 text-[16px] text-gray-600 font-medium hover:underline hover:decoration-2"
                     >
-                        View Details →
+                        View Details <i class="fa-solid fa-arrow-right text-sm"></i>
                     </Link>
                 </div>
                 ))}

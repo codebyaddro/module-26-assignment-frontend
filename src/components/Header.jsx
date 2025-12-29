@@ -49,7 +49,7 @@ export default function Header() {
                         Events
                     </Link>
                     
-                    {/* Dashboard (guarded click) */}
+                    {/* Dashboard */}
                     <Link 
                         to="/dashboard" 
                         onClick={handleDashboardClick}
