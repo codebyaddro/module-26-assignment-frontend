@@ -82,7 +82,7 @@ export default function Dashboard() {
     };
 
     return (
-        <div className="p-10">
+        <div className="lg:w-3/4 md:w-full mx-auto p-10 space-y-16">
             <h2 className="text-2xl font-bold mb-4">Dashboard</h2>
 
             {/* Create */}
